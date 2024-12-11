@@ -25,7 +25,7 @@ public class IpDomainController {
 	@GetMapping("/domains")
 	public String getDomains()
 	{
-		List<String> domains = CommonUtils.generateDemoIps();
+		List<String> domains = CommonUtils.generateDemoDomains();
 		StringBuilder str = new StringBuilder();
 		for (String domain : domains) {
 			str.append(domain);
